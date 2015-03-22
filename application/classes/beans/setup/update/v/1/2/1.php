@@ -26,6 +26,12 @@ class Beans_Setup_Update_V_1_2_1 extends Beans_Setup_Update_V {
 	
 	protected function _execute()
 	{
+
+	DB::Query(
+		Database::UPDATE,
+		"ALTER TABLE transactions ADD `type` enum('cash','check','credit card','transfer','other') DEFAULT NULL AFTER `code`"
+	)->execute();
+
 		return (object)array();
 	}
 }

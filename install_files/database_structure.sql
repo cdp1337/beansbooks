@@ -228,6 +228,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO"; SET time_zone = "+00:00"; CREATE TABLE IF 
   `form_type` enum('sale', 'purchase', 'expense', 'tax_payment') DEFAULT NULL,
   `form_id` bigint UNSIGNED NULL DEFAULT NULL,
   `code` varchar(255) DEFAULT NULL,
+  `type` enum('cash','check','credit card','transfer','other') DEFAULT 'other',
   `reference` varchar(16) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
   `date` date DEFAULT NULL,
