@@ -1,5 +1,26 @@
 # BeansBooks
 
+## Unofficial eVAL Fork Differences
+
+This is an unofficial fork of the BeansBooks application with a few modifications performed.  Namely the following:
+
+### ~~Company Name~~
+
+This fork provides a company name for customers.  This is because our agency deals primarily with companies and organizations
+instead of directly with individuals.
+
+(This has been merged into upstream)
+
+### Payment Type
+
+We like being able to see how a customer paid for an invoice, (be it cash, credit, check, etc.).
+This fork has payment type and reference numbers added.  @see eVAL-Agency/beansbooks@4efc28ed7d736eb1f28ccd02274725f722eada7f (4efc28ed7)
+
+### Transaction / Invoice Number Length
+
+The field length of transaction and invoice numbers has been increased from 16 characters to 32 characters.
+@see eVAL-Agency/beansbooks@02917c064962eee8e7809fb72b1af2a09c98023a (02917c064)
+
 ## Getting Started
 
 This guide will walk you through getting a local instance of BeansBooks running. 
