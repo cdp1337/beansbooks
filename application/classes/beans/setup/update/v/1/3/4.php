@@ -17,7 +17,7 @@ You should have received a copy of the BeansBooks Public License
 along with BeansBooks; if not, email info@beansbooks.com.	
 */
 
-class Beans_Setup_Update_V_1_3_3 extends Beans_Setup_Update_V {
+class Beans_Setup_Update_V_1_3_4 extends Beans_Setup_Update_V {
 
 	public function __construct($data = NULL)
 	{
