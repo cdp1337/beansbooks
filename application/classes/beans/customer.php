@@ -1041,22 +1041,22 @@ class Beans_Customer extends Beans {
 				$sale->reference OR
 				strlen($sale->reference)
 			) AND 
-			strlen($sale->reference) > 16 )
-			throw new Exception("Invalid sale order number: maximum of 16 characters.");
+			strlen($sale->reference) > 32 )
+			throw new Exception("Invalid sale order number: maximum of 32 characters.");
 
 		if( (
 				$sale->alt_reference OR
 				strlen($sale->alt_reference)
 			) AND 
-			strlen($sale->alt_reference) > 16 )
-			throw new Exception("Invalid sale purchase order number: maximum of 16 characters.");
+			strlen($sale->alt_reference) > 32 )
+			throw new Exception("Invalid sale purchase order number: maximum of 32 characters.");
 
 		if( (
 				$sale->aux_reference OR
 				strlen($sale->aux_reference)
 			) AND 
-			strlen($sale->aux_reference) > 16 )
-			throw new Exception("Invalid sale quote number: maximum of 16 characters.");
+			strlen($sale->aux_reference) > 32 )
+			throw new Exception("Invalid sale quote number: maximum of 32 characters.");
 
 		if( $sale->sent AND
 			! (
