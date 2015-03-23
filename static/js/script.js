@@ -435,13 +435,27 @@ function filechooserUpdate(file) {
 /**
  * Helper Function to round numbers to two decimal places - includes a .5 round up.
  */
-function monetaryRound(value) {
-	return ( Math.round(value*100) / 100 );
+function monetaryRound(value, precision) {
+	if(!precision){
+		// Default
+		precision = 2;
+	}
+
+	// This adds support for currencies that have a precision other than 2.
+	// Example, if a price such as $0.0015 is requested with a precision of 4,
+	// the multiplier will be 10000.
+	var multiplier = Math.pow(10, precision);
+
+	return ( Math.round(value * multiplier) / multiplier );
 }
 
-function convertCurrencyToNumber(value) {
+function convertCurrencyToNumber(value, precision) {
+	if(!precision){
+		// Default
+		precision = 2;
+	}
 	// TODO - Add in calculating sums and differences .
-	return monetaryRound(Number(value.replace(/[^0-9\.\-]+/g,"")));
+	return monetaryRound(Number(value.replace(/[^0-9\.\-]+/g,"")), precision);
 }
 
 /**

@@ -113,7 +113,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO"; SET time_zone = "+00:00"; CREATE TABLE IF 
   `adjustment` boolean NOT NULL DEFAULT FALSE,
   `tax_exempt` boolean NOT NULL DEFAULT FALSE,
   `description` varchar(128) DEFAULT NULL,
-  `amount` decimal(15,2) DEFAULT NULL,
+  `amount` decimal(15,4) DEFAULT NULL,
   `quantity` int(10) unsigned DEFAULT NULL,
   `total` decimal(15,2) DEFAULT NULL,
   PRIMARY KEY (`id`)
