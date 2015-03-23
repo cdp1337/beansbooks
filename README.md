@@ -14,12 +14,21 @@ instead of directly with individuals.
 ### Payment Type
 
 We like being able to see how a customer paid for an invoice, (be it cash, credit, check, etc.).
-This fork has payment type and reference numbers added.  @see eVAL-Agency/beansbooks@4efc28ed7d736eb1f28ccd02274725f722eada7f (4efc28ed7)
+This fork has payment type and reference numbers added.  @see https://github.com/eVAL-Agency/beansbooks/commit/4efc28ed7d736eb1f28ccd02274725f722eada7f (4efc28ed7)
 
 ### Transaction / Invoice Number Length
 
 The field length of transaction and invoice numbers has been increased from 16 characters to 32 characters.
-@see eVAL-Agency/beansbooks@02917c064962eee8e7809fb72b1af2a09c98023a (02917c064)
+@see https://github.com/eVAL-Agency/beansbooks/commit/02917c064962eee8e7809fb72b1af2a09c98023a (02917c064)
+
+### Vendor Expense Precision
+
+We have increased the depth of precision on expense line items from 2 to 4 to support item prices such as $0.0125.
+This is useful for purchases in bulk where the individual quantity price is smaller than traditional currencies support.
+
+*Note*, the line total still is rounded to 2 decimal places!
+
+https://github.com/eVAL-Agency/beansbooks/commit/9c859276f7d4f5decb3077c5d9a763aeaf45e055 (9c859276f)
 
 ## Getting Started
 
