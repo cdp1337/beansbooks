@@ -10,14 +10,17 @@
 	<ul>
 		<li class="text-bold customer-payment">
 			<span class="customer-payment-date text-left">
-				Date<span id="customers-payments-payments-paging">{{#customer_payments_more}}|&nbsp;&nbsp;<a href="#" rel="1">View More &gt;</a>{{/customer_payments_more}}
-					{{^customer_payments_more}}&nbsp;{{/customer_payments_more}}</span>
+				Date
 			</span>
-            <span class="customer-payment-type text-center">Payment Type</span>
-            <span class="customer-payment-reference text-center">Ref #</span>
+            <span class="customer-payment-type text-left">Payment Type</span>
+            <span class="customer-payment-reference text-left">Ref #</span>
 			<span class="customer-payment-amount text-center">Payment Amount</span>
 			<span class="customer-payment-account text-center">Deposit Account</span>
-			<span class="customer-payment-actions">&nbsp;</span>
+			<span class="customer-payment-actions text-right">
+				<span id="customers-payments-payments-paging">
+					{{#customer_payments_more}}<a href="#" rel="1">View More &gt;</a>{{/customer_payments_more}}
+				</span>
+			</span>
 		</li>
 		{{#customer_payments}}
 			{{>customers_payments_payment}}
@@ -39,9 +42,7 @@
             <span class="oop-oop-oop">Payment Ref #</span>
 			<span class="oop-oop-oop">Invoice Total</span>
 			<span class="oop-oop-oop">Payment Amount</span>
-			<span class="oop-oop-oop">Write-Off Total</span>
-			<span class="oop-oop-oop">&nbsp;</span>
-			<span class="ehhh-sexy-lady">&nbsp;</span>
+			<span class="ehhh-sexy-lady">Write-Off Total</span>
 		</div>
 		
 		<div class="row column-10">
@@ -59,9 +60,7 @@
             <span class="oop-oop-oop"><input type="text" name="reference"></span>
 			<span class="oop-oop-oop"><input type="text" readonly="readonly" name="sale_total"></span>
 			<span class="oop-oop-oop"><input type="text" readonly="readonly" name="amount"></span>
-			<span class="oop-oop-oop"><input type="text" readonly="readonly" name="writeoff_amount"></span>
-			<span class="oop-oop-oop">&nbsp;</span>
-			<span class="ehhh-sexy-lady">&nbsp;</span>
+			<span class="ehhh-sexy-lady"><input type="text" readonly="readonly" name="writeoff_amount"></span>
 		</div>
 		
 		<div class="row column-10 labels">

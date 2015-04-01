@@ -67,7 +67,7 @@ span.customers-sales-create-form-balance-label {
 	width: 51px;
 	text-align: right;
 }
-span.customers-sales-create-form-balance-value" {
+span.customers-sales-create-form-balance-value {
 	display: inline-block;
 	width: 71px;
 	text-align: left;
@@ -304,7 +304,15 @@ li.customer-payment > span.text-left {
 }
 
 li.customer-payment > span.customer-payment-date {
-	width: 300px;
+	width: 100px;
+}
+
+li.customer-payment > span.customer-payment-type {
+	width: 100px;
+}
+
+li.customer-payment > span.customer-payment-reference {
+	width: 100px;
 }
 
 li.customer-payment > span.customer-payment-amount {
