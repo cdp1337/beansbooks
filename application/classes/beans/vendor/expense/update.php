@@ -144,7 +144,7 @@ class Beans_Vendor_Expense_Update extends Beans_Vendor_Expense {
 										   : NULL;
 
 			$new_expense_line->amount = ( isset($expense_line->amount) )
-									  ? $this->_beans_round($expense_line->amount, 4)
+									  ? $this->_beans_round($expense_line->amount, 6)
 									  : NULL;
 
 			$new_expense_line->quantity = ( isset($expense_line->quantity) )

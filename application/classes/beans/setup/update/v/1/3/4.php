@@ -32,8 +32,8 @@ class Beans_Setup_Update_V_1_3_4 extends Beans_Setup_Update_V {
 		$this->_db_update_table_column('forms', 'alt_reference', ' `alt_reference` VARCHAR(32) NULL DEFAULT NULL');
 		$this->_db_update_table_column('forms', 'aux_reference', ' `aux_reference` VARCHAR(32) NULL DEFAULT NULL');
 
-		// Increase precision of lines to 4 to support > $0.01 prices
-		$this->_db_update_table_column('form_lines', 'amount', '`amount` decimal(15,4) DEFAULT NULL');
+		// Increase precision of lines to 6 to support > $0.01 prices
+		$this->_db_update_table_column('form_lines', 'amount', '`amount` decimal(15,6) DEFAULT NULL');
 
 		return (object)array();
 	}

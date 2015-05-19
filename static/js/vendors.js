@@ -4015,7 +4015,7 @@ if ( document.body.className.match(new RegExp('(\\s|^)vendors(\\s|$)')) !== null
 
 			if( $price.val() &&
 				$price.val().length ) {
-				$price.val(convertCurrencyToNumber($price.val(), 4).toFixed(4));
+				$price.val(convertCurrencyToNumber($price.val(), 6).toFixed(6));
 			}
 
 			if( $quantity.val() &&

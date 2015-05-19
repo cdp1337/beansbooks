@@ -1297,7 +1297,7 @@ if ( document.body.className.match(new RegExp('(\\s|^)customers(\\s|$)')) !== nu
 					return {
 						last_customer_id: '',
 						search_terms: term, // search term
-						count: 1000,
+						count: 1000
 					};
 				},
 				results: function (data) { // parse the results into the format expected by Select2.
@@ -2867,7 +2867,7 @@ if ( document.body.className.match(new RegExp('(\\s|^)customers(\\s|$)')) !== nu
 				search_terms: search_terms,
 				search_past_due: search_past_due,
 				search_invoiced: search_invoiced,
-				count: 20,
+				count: 200,
 				invoice_view: invoice_view
 			},
 			function(data) {
